@@ -1,0 +1,29 @@
+{
+  "name": "kano-ts-starter",
+  "version": "0.5.0",
+  "description": "",
+  "main": "",
+  "scripts": {
+    "gulp": "gulp",
+    "webpack":"webpack",
+    "start": "gulp start",
+    "tsc": "gulp tsCompile",
+    "tslint": "gulp tsLint"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "gulp": "github:gulpjs/gulp#4.0",
+    "gulp-notify": "^2.2.0",
+    "gulp-plumber": "^1.1.0",
+    "gulp-sourcemaps": "^2.4.0",
+    "gulp-tslint": "^7.0.1",
+    "require-dir": "^0.3.1",
+    "ts-loader": "^2.0.2",
+    "tslint": "^4.3.1",
+    "typescript": "^2.2.1",
+    "webpack": "^2.3.0",
+    "webpack-stream": "^3.2.0"
+  }
+}

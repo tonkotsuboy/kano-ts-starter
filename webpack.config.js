@@ -1,0 +1,22 @@
+// ビルド設定ファイル
+const buidConfig = require("./build_config")
+
+const entry = {}
+
+let webpackConfig = {
+  entry: buidConfig.tsEntryFiles,
+  output: {
+    filename: "[name].js"
+  },
+  devtool: "source-map",
+  resolve: {
+    extensions: ["", ".ts"]
+  },
+  module: {
+    loaders: [
+      {test: /\.ts$/, loader: 'ts-loader'}
+    ]
+  }
+}
+
+module.exports = webpackConfig
