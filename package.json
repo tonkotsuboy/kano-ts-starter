@@ -5,7 +5,7 @@
   "main": "",
   "scripts": {
     "gulp": "gulp",
-    "webpack":"webpack",
+    "webpack": "webpack",
     "start": "gulp start",
     "tsc": "gulp tsCompile",
     "tslint": "gulp tsLint"
@@ -17,13 +17,13 @@
     "gulp": "github:gulpjs/gulp#4.0",
     "gulp-notify": "^2.2.0",
     "gulp-plumber": "^1.1.0",
-    "gulp-sourcemaps": "^2.4.0",
-    "gulp-tslint": "^7.0.1",
+    "gulp-sourcemaps": "^2.4.1",
+    "gulp-tslint": "^7.1.0",
     "require-dir": "^0.3.1",
-    "ts-loader": "^2.0.2",
-    "tslint": "^4.3.1",
-    "typescript": "^2.2.1",
-    "webpack": "^2.3.0",
+    "ts-loader": "^2.0.3",
+    "tslint": "^4.5.1",
+    "typescript": "^2.2.2",
+    "webpack": "^2.3.2",
     "webpack-stream": "^3.2.0"
   }
 }

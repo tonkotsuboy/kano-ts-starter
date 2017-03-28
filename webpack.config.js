@@ -11,10 +11,10 @@ let webpackConfig = {
   },
   devtool: "source-map",
   resolve: {
-    extensions: ["", ".ts"]
+    extensions: [".ts", ".js"]
   },
   module: {
-    loaders: [
+    rules: [
       {test: /\.ts$/, loader: 'ts-loader'}
     ]
   }
