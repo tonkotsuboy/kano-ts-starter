@@ -14,6 +14,7 @@
   "author": "",
   "license": "ISC",
   "devDependencies": {
+    "browser-sync": "^2.18.8",
     "gulp": "github:gulpjs/gulp#4.0",
     "gulp-notify": "^2.2.0",
     "gulp-plumber": "^1.1.0",
