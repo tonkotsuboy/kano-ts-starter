@@ -34,9 +34,11 @@ function startWatchTasks() {
 
   // TypeScriptファイルのウォッチ
   gulp.watch(`${config.tsFolder}/**/*.ts`,
-    gulp.parallel(
-      taskName.tsLint,  // Lint
-      taskName.tsCompile  // コンパイル
+    gulp.series(
+      gulp.parallel(
+        taskName.tsLint,  // Lint
+        taskName.tsCompile  // コンパイル
+      )
     )
   )
 }
