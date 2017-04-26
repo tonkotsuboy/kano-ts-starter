@@ -10,6 +10,12 @@
 npm i
 ```
 
+Yarnがインストールされていれば、下記の方が高速です。
+
+```
+yarn install
+```
+
 ### typescript watch & browsersync
 TypeScriptファイルの変更があり次第、TypeScriptのコンパイルと構文チェックを行います。TypeScriptの更新中は、基本的にこのタスクのみでOKです。停止時には `control` `C`を押してください。 また、ローカルサーバーが自動で起動します。
 
