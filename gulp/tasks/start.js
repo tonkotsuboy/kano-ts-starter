@@ -8,10 +8,10 @@ const config = require("../../build_config")
 const taskName = require("../taskName")
 const browserSync = require("browser-sync")
 
-require("./tsCompile")
-require("./tsLint")
+require("./tsCompile");
+require("./tsLint");
 
-const gulp = require("gulp")
+const gulp = require("gulp");
 
 /**
  * ローカルサーバーのタスク設定
@@ -23,10 +23,10 @@ gulp.task(taskName.start,
       taskName.tsCompile
     ),
     () => {
-      startWatchTasks()
+      startWatchTasks();
     }
   )
-)
+);
 
 /**
  * ウォッチタスクを開始します。
@@ -45,9 +45,11 @@ function startWatchTasks() {
 
   // TypeScriptファイルのウォッチ
   gulp.watch(`${config.tsFolder}/**/*.ts`,
-    gulp.parallel(
-      taskName.tsLint,  // Lint
-      taskName.tsCompile  // コンパイル
+    gulp.series(
+      gulp.parallel(
+        taskName.tsLint,  // Lint
+        taskName.tsCompile  // コンパイル
+      )
     )
-  )
+  );
 }
