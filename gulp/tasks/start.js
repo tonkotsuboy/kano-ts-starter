@@ -4,13 +4,13 @@
  * @author ICS-Kano
  */
 // 設定ファイル
-const config = require("../../build_config")
-const taskName = require("../taskName")
+const config = require("../../build_config");
+const taskName = require("../taskName");
 
-require("./tsCompile")
-require("./tsLint")
+require("./tsCompile");
+require("./tsLint");
 
-const gulp = require("gulp")
+const gulp = require("gulp");
 
 /**
  * ローカルサーバーのタスク設定
@@ -22,10 +22,10 @@ gulp.task(taskName.start,
       taskName.tsCompile
     ),
     () => {
-      startWatchTasks()
+      startWatchTasks();
     }
   )
-)
+);
 
 /**
  * ウォッチタスクを開始します。
@@ -40,5 +40,5 @@ function startWatchTasks() {
         taskName.tsCompile  // コンパイル
       )
     )
-  )
+  );
 }

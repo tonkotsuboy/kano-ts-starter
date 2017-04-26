@@ -80,6 +80,7 @@ var EventName = (function () {
 }());
 EventName.DOM_CONTENT_LOADED = "DOMContentLoaded";
 exports.default = EventName;
+;
 
 
 /***/ }),
@@ -98,6 +99,7 @@ var SubModule = (function () {
     return SubModule;
 }());
 exports.default = SubModule;
+;
 
 
 /***/ }),
