@@ -12,6 +12,11 @@ npm i
 
 ### typescript watch
 TypeScriptファイルの変更があり次第、TypeScriptのコンパイルと構文チェックを行います。TypeScriptの更新中は、基本的にこのタスクのみでOKです。停止時には `control` `C`を押してください。 
+Yarnがインストールされていれば、下記の方が高速です。
+
+```
+yarn install
+```
 
 ```
 npm run start
