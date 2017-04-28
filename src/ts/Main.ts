@@ -1,7 +1,7 @@
 import SubModule from "./sub/SubModule";
-import EventName from "./enum/EventName";
 
 import "es6-promise/auto";
+import {EventName} from "./eventname/EventName";
 
 class Main {
   constructor() {
