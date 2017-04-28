@@ -4,7 +4,7 @@
  * @author ICS-Kano
  */
 module.exports = {
-  "start": "start",
-  "tsCompile": "tsCompile",
-  "tsLint": "tsLint"
+  start: "start",
+  tsCompile: "tsCompile",
+  tsLint: "tsLint"
 };

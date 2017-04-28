@@ -1,32 +1,33 @@
 import SubModule from "./sub/SubModule";
 import EventName from "./enum/EventName";
+
+import "es6-promise/auto";
+
 class Main {
   constructor() {
-    this.hello();
     const sub = new SubModule();
     sub.hello();
     this.checkAsync();
   }
 
-  private hello():void {
-    console.log("log from Main Class");
-  }
-
   /**
-   * await/asyncのテストコマンド
+   * Promise、await/asyncのテストメソッドです。
    * @returns {Promise<void>}
    */
   private async checkAsync():Promise<void> {
-    console.log("start");
+
+    const log:HTMLDivElement = <HTMLDivElement> document.getElementById("log");
+
+    log.innerHTML = "start";
 
     for (let i = 0; i < 50; i++) {
       await this.delay(30);
-      console.log(`${i}:works`);
+      log.innerHTML += `<br>${i}:works`;
     }
 
     await this.delay(30);
 
-    console.log("end!");
+    log.innerHTML += `end`;
   }
 
   private delay(milliseconds:number):Promise<void> {
