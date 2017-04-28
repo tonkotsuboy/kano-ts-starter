@@ -40,12 +40,29 @@ npm run tslint
 
 ## サンプルファイルについて
 `Main.ts`では、`SubModule.ts`と`EventName.ts`という2つのモジュールを読み込んでいます。webpackによって、このモジュールを解決しています。
-また、TypeScript 2.1でES5向けコンパイルが可能になった`await/async`を`checkAsync()`にて使用しています。
+
+### Promise await/asyncのテスト
+TypeScript 2.1でES5向けコンパイルが可能になった`await/async`を`AsyncTest`クラスにて試せます。
+
+`Main`の次の2箇所のコメントアウトを解除します。
+
+```
+//import AsyncTest from "./test/AsyncTest";
+```
+
+```
+// new AsyncTest();`、
+```
+
+画面に一定時間毎に文字列が出力されれば成功です。
 
 ## 主な使用技術について
-- typescirpt 2.2
+- typescirpt 2
 - gulp 4
 - webpack 2
 
 ## 注意点など
 - エディターでTypeScriptの自動コンパイル機能がある場合は、OFFにしてください。
+
+## 作成の背景について
+記事「[1行のコマンドでTypeScriptのコンパイル環境が全部整うスターターキットを作りました - Qiita](http://qiita.com/tonkotsuboy_com/items/12df280b1485d396c2ab)」にて紹介しています。
