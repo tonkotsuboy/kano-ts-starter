@@ -13,6 +13,7 @@
     "tslint": "gulp tsLint"
   },
   "devDependencies": {
+    "es6-promise": "^4.1.0",
     "gulp": "github:gulpjs/gulp#4.0",
     "gulp-notify": "^3.0.0",
     "gulp-plumber": "^1.1.0",
