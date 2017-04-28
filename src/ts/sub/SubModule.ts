@@ -1,5 +1,6 @@
 export default class SubModule {
   public hello():void {
-    document.write("SubClass works!");
+    const log:HTMLDivElement = <HTMLDivElement> document.getElementById("log");
+    log.innerHTML += "<br> SubClass works!  ";
   }
 }

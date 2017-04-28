@@ -18,7 +18,7 @@ export default class AsyncTest {
       return null;
     }
 
-    log.innerHTML = "start";
+    log.innerHTML += "<br><br> ====== async/await test start ======";
 
     for (let i = 0; i < 50; i++) {
       await this.delay(30);
@@ -27,7 +27,7 @@ export default class AsyncTest {
 
     await this.delay(30);
 
-    log.innerHTML += `end`;
+    log.innerHTML += `<br> ====== end ======`;
   }
 
   private delay(milliseconds:number):Promise<void> {
