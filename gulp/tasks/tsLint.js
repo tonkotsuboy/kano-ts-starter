@@ -12,7 +12,7 @@ const notify = require("gulp-notify");
 const plumber = require("gulp-plumber");
 
 gulp.task(taskName.tsLint, () => {
-  return gulp.src(`${config.tsFolder}**/*.ts`)
+  return gulp.src(`${config.tsFolder}/**/*.ts`)
     .pipe(plumber({
       errorHandler: function (err) {
         notify.onError(`ts Error:${err}`);
