@@ -39,9 +39,9 @@ function startWatchTasks() {
   });
 
   // jsファイルを監視
-  gulp.watch(`${config.jsFolder}/**/*.js`, () => {
-    browserSync.reload()   // ファイルに変更があれば同期しているブラウザをリロード
-  })
+  gulp.watch(`${config.jsFolder}/**/*.js`, (done) => {
+    browserSync.reload();  // ファイルに変更があれば同期しているブラウザをリロード
+    done();
   });
 
   // TypeScriptファイルのウォッチ
