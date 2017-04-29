@@ -4,9 +4,9 @@
  * @author ICS-Kano
  */
 // 設定ファイル
-const config = require("../../build_config")
-const taskName = require("../taskName")
-const browserSync = require("browser-sync")
+const config = require("../../build_config");
+const taskName = require("../taskName");
+const browserSync = require("browser-sync");
 
 require("./tsCompile");
 require("./tsLint");
@@ -36,12 +36,13 @@ function startWatchTasks() {
     server: {
       baseDir: "src" // ルートとなるディレクトリを指定
     }
-  })
+  });
 
   // jsファイルを監視
   gulp.watch(`${config.jsFolder}/**/*.js`, () => {
     browserSync.reload()   // ファイルに変更があれば同期しているブラウザをリロード
   })
+  });
 
   // TypeScriptファイルのウォッチ
   gulp.watch(`${config.tsFolder}/**/*.ts`,
