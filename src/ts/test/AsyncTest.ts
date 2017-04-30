@@ -30,6 +30,10 @@ export default class AsyncTest {
     log.innerHTML += `<br> ====== end ======`;
   }
 
+  /**
+   * 一定時間後にresoloveを返します。
+   * @returns {Promise<void>}
+   */
   private delay(milliseconds:number):Promise<void> {
     return new Promise<void>(resolve => {
       setTimeout(resolve, milliseconds);
