@@ -1,4 +1,4 @@
-# TypeScript Starter
+# TypeScript Starter with BrowserSync
 ## 目的
 シンプルなコマンドで、TypeScriptのコンパイルを始めることを目的としています。TypeScript 2.1以上に対応しており、外部モジュール、ES5向けの`Promise`、`await/async`が使用可能です。
 
@@ -16,8 +16,8 @@ Yarnがインストールされていれば、下記の方が高速です。
 yarn install
 ```
 
-### typescript watch
-TypeScriptファイルの変更があり次第、TypeScriptのコンパイルと構文チェックを行います。TypeScriptの更新中は、基本的にこのタスクのみでOKです。停止時には `control` `C`を押してください。 
+### typescript watch & browsersync
+TypeScriptファイルの変更があり次第、TypeScriptのコンパイルと構文チェックを行います。TypeScriptの更新中は、基本的にこのタスクのみでOKです。停止時には `control` `C`を押してください。 また、ローカルサーバーが自動で起動します。
 
 ```
 npm run start
