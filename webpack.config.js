@@ -9,6 +9,7 @@ let webpackConfig = {
   output: {
     filename: "[name].js"
   },
+  cache: true,
   devtool: "source-map",
   resolve: {
     extensions: [".ts", ".js"]
