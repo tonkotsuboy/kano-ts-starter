@@ -20,14 +20,14 @@ yarn install
 TypeScriptファイルの変更があり次第、TypeScriptのコンパイルを行います。TypeScriptの更新中は、基本的にこのタスクのみでOKです。停止時には `control` `C`を押してください。 また、ローカルサーバーが自動で起動します。
 
 ```
-npx start
+npm run start
 ```
 
 ### typescript compile
 TypeScriptのコンパイルを行います。`ts/Main.ts`がコンパイルされます。
 
 ```
-npx tsc
+npm run tsc
 ```
 
 
