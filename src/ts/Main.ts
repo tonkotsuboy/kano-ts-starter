@@ -1,7 +1,5 @@
-import "es6-promise/auto";
-import {EventName} from "./eventname/EventName";
-import SubModule from "./sub/SubModule";
-// import AsyncTest from "./test/AsyncTest";
+import { EventName } from "./eventname/EventName";
+import { SubModule } from "./sub/SubModule";
 
 class Main {
   constructor() {
