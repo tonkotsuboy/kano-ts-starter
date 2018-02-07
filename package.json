@@ -1,6 +1,6 @@
 {
   "name": "kano-ts-starter",
-  "version": "1.0.0",
+  "version": "2.0.0",
   "main": "index.js",
   "repository": "https://ics-kano@github.com/tonkotsuboy/kano-ts-starter.git",
   "author": "tonkotsuboy <t.kano.624@gmail.com>",
@@ -13,17 +13,20 @@
     "tslint": "gulp tsLint"
   },
   "devDependencies": {
-    "es6-promise": "^4.1.0",
     "gulp": "github:gulpjs/gulp#4.0",
-    "gulp-notify": "^3.0.0",
-    "gulp-plumber": "^1.1.0",
+    "gulp-notify": "^3.2.0",
+    "gulp-plumber": "^1.2.0",
     "gulp-tslint": "^8.0.0",
-    "npm-check-updates": "^2.13.0",
+    "npm-check-updates": "^2.14.0",
     "require-dir": "^0.3.1",
-    "ts-loader": "^3.2.0",
-    "tslint": "^5.8.0",
-    "typescript": "^2.6.2",
+    "ts-loader": "^3.4.0",
+    "tslint": "^5.9.1",
+    "typescript": "^2.7.1",
     "webpack": "^3.10.0",
     "webpack-stream": "^4.0.0"
+  },
+  "dependencies": {
+    "core-js": "^2.5.3",
+    "rxjs": "^5.5.6"
   }
 }
