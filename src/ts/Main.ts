@@ -1,9 +1,11 @@
 import { EventName } from "./eventname/EventName";
 import { SubModule } from "./sub/SubModule";
+// import { AsyncTest } from "./test/AsyncTest";
 
 class Main {
   constructor() {
-    document.write("MainClass works!  ");
+    document.getElementById("log").innerHTML = "MainClass Works";
+
     const sub = new SubModule();
     sub.hello();
 
