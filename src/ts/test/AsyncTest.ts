@@ -3,14 +3,13 @@
  */
 export class AsyncTest {
   constructor() {
-    this.start();
   }
 
   /**
    * 一定時間ごとに文字列を出力します。
    * @returns {Promise<void>}
    */
-  private async start(): Promise<void> {
+  async start(): Promise<void> {
 
     const log: HTMLDivElement = <HTMLDivElement> document.getElementById("log");
 
