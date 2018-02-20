@@ -1,5 +1,10 @@
 export class SubModule {
   public hello(): void {
-    document.getElementById("log").innerHTML += "<br> SubClass works!  ";
+    const log = document.getElementById("log");
+
+    if (!log) {
+      return;
+    }
+    log.innerHTML += "<br> SubClass works!  ";
   }
 }

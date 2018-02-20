@@ -6,27 +6,23 @@
   "author": "tonkotsuboy <t.kano.624@gmail.com>",
   "license": "MIT",
   "scripts": {
+    "build": "webpack",
+    "start": "webpack-dev-server",
     "gulp": "gulp",
     "webpack": "webpack",
-    "start": "gulp start",
     "tsc": "gulp tsCompile",
     "tslint": "gulp tsLint"
   },
   "devDependencies": {
-    "gulp": "github:gulpjs/gulp#4.0",
-    "gulp-notify": "^3.2.0",
-    "gulp-plumber": "^1.2.0",
-    "gulp-tslint": "^8.0.0",
-    "npm-check-updates": "^2.14.0",
-    "require-dir": "^0.3.1",
-    "ts-loader": "^3.4.0",
+    "awesome-typescript-loader": "^3.4.1",
+    "source-map-loader": "^0.2.3",
     "tslint": "^5.9.1",
-    "typescript": "^2.7.1",
-    "webpack": "^3.10.0",
-    "webpack-stream": "^4.0.0"
+    "tslint-loader": "^3.5.3",
+    "typescript": "^2.7.2",
+    "webpack": "^3.11.0",
+    "webpack-dev-server": "^2.11.1"
   },
   "dependencies": {
-    "core-js": "^2.5.3",
     "rxjs": "^5.5.6"
   }
 }
