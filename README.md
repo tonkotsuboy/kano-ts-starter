@@ -1,4 +1,10 @@
 # TypeScript Starter
+
+![](https://img.shields.io/badge/foo-bar-guz.svg)
+
+
+
+
 ## 目的
 シンプルなコマンドで、TypeScriptのコンパイルを始めることを目的としています。TypeScript 2.1以上に対応しており、外部モジュール、ES5向けの`Promise`、`await/async`が使用可能です。
 
